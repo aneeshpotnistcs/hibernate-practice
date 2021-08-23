@@ -5,16 +5,16 @@
 <hibernate-configuration>
  <session-factory>
   <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-  <property name="connection.url">jdbc:mysql://localhost:3306/demo3</property>
+  <property name="connection.url">jdbc:mysql://localhost:3306/demo1</property>
   <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
   <property name="hibernate.connection.username">root</property>
   <property name="hibernate.connection.password">Nuvelabs123$</property>
   <property name="show_sql">true</property>
-  <property name="hbm2ddl.auto">create</property>
+  <property name="hbm2ddl.auto">update</property>
 
      <mapping
-   class="com.tcs.oneToMany.joinTable.AccountEntity"></mapping>
-   <mapping class="com.tcs.oneToMany.joinTable.EmployeeEntity"></mapping>
+   class="com.tcs.oneToMany.foreignKeyAsso.AccountEntity"></mapping>
+   <mapping class="com.tcs.oneToMany.foreignKeyAsso.EmployeeEntity"></mapping>
 
  </session-factory>
 </hibernate-configuration>
