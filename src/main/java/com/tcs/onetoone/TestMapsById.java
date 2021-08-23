@@ -15,7 +15,7 @@ public class TestMapsById
        
 		AccountEntity account = new AccountEntity();
 		account.setAccountNumber("123-345-65454");
-		//session.save(account);
+		session.save(account);
 		
 		//Add new Employee object
 		EmployeeEntity emp = new EmployeeEntity();

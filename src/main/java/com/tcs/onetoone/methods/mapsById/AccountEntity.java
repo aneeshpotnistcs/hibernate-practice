@@ -12,7 +12,7 @@ import javax.persistence.UniqueConstraint;
 
 @Entity(name = "MapsByIdAccountEntity")
 @Table(name = "ACCOUNT", uniqueConstraints = {
-		@UniqueConstraint(columnNames = "ID")})
+		@UniqueConstraint(columnNames = "Id")})
 public class AccountEntity implements Serializable 
 {
 
@@ -20,7 +20,7 @@ public class AccountEntity implements Serializable
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "ID", unique = true, nullable = false)
+	@Column(name = "Id", unique = true, nullable = false)
 	private Integer accountId;
 
 	@Column(name = "ACC_NUMBER", unique = true, nullable = false, length = 100)

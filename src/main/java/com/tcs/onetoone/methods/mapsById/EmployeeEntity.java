@@ -15,7 +15,7 @@ import javax.persistence.UniqueConstraint;
 
 @Entity(name = "MapsByIdEmployeeEntity")
 @Table(name = "Employee", uniqueConstraints = {
-		@UniqueConstraint(columnNames = "ID"),
+		@UniqueConstraint(columnNames = "Id"),
 		@UniqueConstraint(columnNames = "EMAIL") })
 public class EmployeeEntity implements Serializable {
 	
@@ -23,7 +23,7 @@ public class EmployeeEntity implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "ID", unique = true, nullable = false)
+	@Column(name = "Id", unique = true, nullable = false)
 	private Integer employeeId;
 	
 	@Column(name = "EMAIL", unique = true, nullable = false, length = 100)

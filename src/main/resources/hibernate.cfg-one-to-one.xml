@@ -11,6 +11,12 @@
   <property name="hibernate.connection.password">Nuvelabs123$</property>
   <property name="show_sql">true</property>
   <property name="hbm2ddl.auto">create</property>
+    <mapping
+   class="com.tcs.onetoone.methods.foreignKeyAsso.EmployeeEntity"></mapping>
+   <mapping class="com.tcs.onetoone.methods.foreignKeyAsso.AccountEntity"></mapping>
+     <mapping
+   class="com.tcs.onetoone.methods.joinTable.EmployeeEntity"></mapping>
+   <mapping class="com.tcs.onetoone.methods.joinTable.AccountEntity"></mapping>
   <mapping
    class="com.tcs.onetoone.methods.mapsById.EmployeeEntity"></mapping>
    <mapping class="com.tcs.onetoone.methods.mapsById.AccountEntity"></mapping>
