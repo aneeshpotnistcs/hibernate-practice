@@ -13,8 +13,8 @@
   <property name="hbm2ddl.auto">create</property>
 
      <mapping
-   class="com.tcs.onetoone.methods.sharedPrimaryKey.EmployeeEntity"></mapping>
-   <mapping class="com.tcs.onetoone.methods.sharedPrimaryKey.AccountEntity"></mapping>
+   class="com.tcs.manyToMany.joinTable.ReaderEntity"></mapping>
+   <mapping class="com.tcs.manyToMany.joinTable.SubscriptionEntity"></mapping>
 
  </session-factory>
 </hibernate-configuration>
